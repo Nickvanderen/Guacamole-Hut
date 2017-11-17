@@ -5,6 +5,7 @@ class CreateReservations < ActiveRecord::Migration[5.0]
       t.string :email, null: false
       t.integer :party_size, null: false
       t.date :date, null: false
+      t.datetime :time, nul: false
       t.integer :phone_number
 
       t.timestamps

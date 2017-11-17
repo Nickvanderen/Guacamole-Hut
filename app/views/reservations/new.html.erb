@@ -1,1 +1,28 @@
-<h1>Reservations</h1>
+<section>
+  <h1>Reservations</h1>
+  <%= form_for :reservations do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :field %>
+  </p>
+  <p>
+    <%= f.label :email %>
+    <%= f.text_field :field %>
+  </p>
+  <p>
+    <%= f.label :party_size %>
+    <%= f.text_field :field %>
+  </p>
+  <p>
+    <%= f.label :date %>
+    <%= f.text_field :field, class: :reservation_date  %>
+  </p>
+  <p>
+    <%= f.label :time %>
+    <%= f.text_field :field  %>
+  </p>
+  <p>
+    <%= f.submit "Book", class: 'button' %>
+  </p>
+  <% end %>
+</section>

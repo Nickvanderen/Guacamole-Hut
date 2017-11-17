@@ -5,7 +5,16 @@ body, body * {
   margin: 0;
 }
 
+main {
+  width: 100%
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+}
+
 h1 {
   font-family: 'Barrio', cursive;
-  color: pink;
+  color: green;
 }

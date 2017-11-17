@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20171117193751) do
     t.string   "email",        null: false
     t.integer  "party_size",   null: false
     t.date     "date",         null: false
+    t.datetime "time"
     t.integer  "phone_number"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
