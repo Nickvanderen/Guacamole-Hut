@@ -1,0 +1,11 @@
+/* general styles */
+
+body, body * {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Barrio', cursive;
+  color: pink;
+}
