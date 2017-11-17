@@ -1,5 +1,5 @@
-class ReservationsController < ActionController::Base
-  
+class ReservationsController < ApplicationController
+
   def new
     @reservation = Reservation.new
   end
