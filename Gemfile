@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-ui-rails'
+gem 'jquery-timepicker-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
