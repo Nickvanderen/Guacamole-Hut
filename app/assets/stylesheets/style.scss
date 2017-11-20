@@ -1,0 +1,25 @@
+/* general styles */
+
+body, body * {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 100%
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Barrio', cursive;
+  color: #53ba4e;
+}
+
+.errors {
+  list-style-type: none;
+  color: red;
+}
