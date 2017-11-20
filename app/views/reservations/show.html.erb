@@ -4,7 +4,7 @@
   <p>
     Your reservation is for
     <%= @reservation.time.to_s(:time) %>pm
-    <%= @reservation.date %> for
+    <%= @reservation.date.strftime("%m/%d") %> for
     <%= @reservation.party_size %> people!
   </p>
   <p>
@@ -12,6 +12,6 @@
     <%= @reservation.email %>
   </p>
   <p>
-    If you need to make changes or delete your reservation follow this link  <a href="javascript":;><em>editmyreservation</em></a> 
+    If you need to make changes or delete your reservation follow this link  <a href="javascript":;><em>editmyreservation</em></a>
   </p>
 </section>
