@@ -1,7 +1,7 @@
 <section>
   <h1>Reservations</h1>
   <% if @reservation.errors.any? %>
-  <ul>
+  <ul class="errors">
     <% @reservation.errors.full_messages.each do |error| %>
     <li>
       <%= error %>
