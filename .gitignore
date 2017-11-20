@@ -1,3 +1,4 @@
 /tmp/*
-
-[Ll]ogs/
+/log/*
+!/log/.keep
+!/tmp/.keep
