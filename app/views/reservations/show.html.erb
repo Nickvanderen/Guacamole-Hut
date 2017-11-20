@@ -1,18 +1,17 @@
 <section>
   <h1>yay</h1>
+  <h2>Thank you for booking <%= @reservation.name  %>!</h2>
   <p>
-    <%= @reservation.name  %>
+    Your reservation is for
+    <%= @reservation.time.to_s(:time) %>pm
+    <%= @reservation.date %> for
+    <%= @reservation.party_size %> people!
   </p>
   <p>
+    A confirmation will be sent to
     <%= @reservation.email %>
   </p>
   <p>
-    <%= @reservation.party_size %>
-  </p>
-  <p>
-    <%= @reservation.date %>
-  </p>
-  <p>
-    <%= @reservation.time.to_s(:time) %>pm 
+    If you need to make changes or delete your reservation follow this link  <a href="javascript":;><em>editmyreservation</em></a> 
   </p>
 </section>
