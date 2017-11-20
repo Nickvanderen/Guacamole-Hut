@@ -1,0 +1,18 @@
+<section>
+  <h1>yay</h1>
+  <p>
+    <%= @reservation.name  %>
+  </p>
+  <p>
+    <%= @reservation.email %>
+  </p>
+  <p>
+    <%= @reservation.party_size %>
+  </p>
+  <p>
+    <%= @reservation.date %>
+  </p>
+  <p>
+    <%= @reservation.time.to_s(:time) %>pm 
+  </p>
+</section>

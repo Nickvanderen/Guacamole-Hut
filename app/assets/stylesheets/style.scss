@@ -5,6 +5,10 @@ body, body * {
   margin: 0;
 }
 
+main, section, article, div, aside, footer {
+  border: 1px dotted red;
+}
+
 main {
   width: 100%
 }
