@@ -12,6 +12,6 @@
     <%= @reservation.email %>
   </p>
   <p>
-    If you need to make changes or delete your reservation follow this link  <a href="javascript":;><em>editmyreservation</em></a>
+    If you need to make changes or delete your reservation select <%= link_to 'change reservations', edit_reservation_path(@reservation) %>
   </p>
 </section>

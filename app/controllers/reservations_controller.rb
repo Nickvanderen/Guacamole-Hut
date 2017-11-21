@@ -22,6 +22,19 @@ class ReservationsController < ApplicationController
     render 'show'
   end
 
+  def edit
+    @reservation = Reservation.find(params[:id])
+  end
+
+  def update
+    @reservation = Reservation.find(params[:id])
+    if @reservation.udpate(params[:reservation]).permit(:name, :email, :party_size, :date, :time)
+      redirect_to @reservation
+    else
+      render 'edit'
+    end
+  end
+
   private
     def reservation_params
       params.require(:reservation).permit(:name, :email, :party_size, :date, :time)
